@@ -1,13 +1,14 @@
+from car import Car
 from abc import ABC
 
-from car import Car
-
-
-class WilloughbyEngine(Car, ABC):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
-        super().__init__(last_service_date)
+class WilloughbyEngine(Car,ABC):
+    def _init__(self, last_service_date, current_mileage, last_service_mileage):
+        """warning_light_is_on is set to False because 
+        its not applicable to capulet engine
+        """
+        super().__int__(last_service_date, last_service_mileage, False)
         self.current_mileage = current_mileage
-        self.last_service_mileage = last_service_mileage
-
+        
     def engine_should_be_serviced(self):
         return self.current_mileage - self.last_service_mileage > 60000
+    
