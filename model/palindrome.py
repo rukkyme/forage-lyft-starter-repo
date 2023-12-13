@@ -1,4 +1,4 @@
-from engine1.sternman_engine import SternmanEngine
+from engine.sternman_engine import SternmanEngine
 from batteries.spindler_battery import SpindlerBattery
 from datetime import datetime 
 

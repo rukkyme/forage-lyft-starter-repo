@@ -1,4 +1,4 @@
-from engine1.capulet_engine import CapuletEngine
+from engine.capulet_engine import CapuletEngine
 from batteries.spindler_battery import SpindlerBattery
 from datetime import datetime
 
